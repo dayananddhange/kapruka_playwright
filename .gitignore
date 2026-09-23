@@ -8,3 +8,4 @@ node_modules/
 /playwright/.auth/
 /config/environment.ts
 /package-lock.json
+/.vscode
