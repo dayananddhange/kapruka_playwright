@@ -5,17 +5,15 @@ export abstract class BasePage_SOLID {
         this.page=page;
     }
     async navigate(url:string):Promise<void> {
-        await this.page.goto(url,{waitUntil:'load'});
+        await this.page.goto(url);
     }
     async click(locator:Locator):Promise<void> {
-        await locator.waitFor({state:'visible'});
         await locator.click();
     }
 
     async fill(locator:Locator,value:string):Promise<void> {
-        await locator.waitFor({state:'visible'});
         await locator.fill(value);
     }
 
-    abstract load():Promise<void>
+    abstract isLoaded():Promise<void>;
 }

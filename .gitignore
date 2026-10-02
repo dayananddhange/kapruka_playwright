@@ -3,9 +3,14 @@
 node_modules/
 /test-results/
 /playwright-report/
+allure-results/
+allure-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
-/config/environment.ts
-/package-lock.json
 /.vscode
+/.auth/
+/.env
+/.env.*
+!/.env.example
+/config/.env.*
