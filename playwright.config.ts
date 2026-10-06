@@ -11,6 +11,7 @@ const workers = process.env.PLAYWRIGHT_WORKERS
  */
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.ts',
   /* Run tests in files in parallel */
   fullyParallel: true,
   forbidOnly: isCI,
